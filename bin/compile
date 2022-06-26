@@ -31,5 +31,5 @@ export PATH=$PATH:/$HOME/$VENDOR_DIR/youtube-dl
 
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl"
-mkdir -p $(dirname $PROFILE_PATH)0
+mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:${HOME}/vendor/youtube-dl"' >> $PROFILE_PATH
