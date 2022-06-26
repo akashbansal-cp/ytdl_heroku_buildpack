@@ -3,15 +3,29 @@ echo "-----> Installing youtube-dl"
 
 #change to the BUILD_DIR
 
-mkdir ytdl
-cd ytdl
+BUILD_DIR=${1:-}
+VENDOR_DIR="vendor"
+YTDL_NAME="youtube-dl"
+
+cd $BUILD_DIR
+mkdir -p $VENDOR_DIR
+cd $VENDOR_DIR
+mkdir -p youtube-dl
+cd youtube-dl
+
 
 # download the youtube-dl
-curl -L https://yt-dl.org/downloads/latest/youtube-dl -o youtube-dl
+code=$(curl https://yt-dl.org/downloads/latest/youtube-dl -L --silent --fail --retry 5 --retry-max-time 15 -o ./$YTDL_NAME --write-out "%{http_code}")
+
+
+if [ "$code" != "200" ]; then
+  echo "Unable to download youtubedl: $code" | output && exit 1
+fi
+
 
 chmod a+rx ./youtube-dl
 
-pwd
-
-
+PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl"
+mkdir -p $(dirname $PROFILE_PATH)
+echo 'export PATH="$PATH:${HOME}/vendor/youtube-dl"' >> $PROFILE_PATH
 
