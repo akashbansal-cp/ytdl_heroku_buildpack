@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# cat <<EOF
-# ---
-# config_vars:
-# PATH: $PATH:/youtube-dl
-# EOF
+cat <<EOF
+---
+config_vars:
+PATH: $PATH:/app/vendor/youtube-dl
+EOF
