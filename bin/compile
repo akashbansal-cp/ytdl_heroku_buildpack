@@ -10,6 +10,7 @@ cd vendor/youtube-dl
 # download the youtube-dl
 curl https://yt-dl.org/downloads/latest/youtube-dl
 
+dir
 chmod a+rx ./youtube-dl
 
 
