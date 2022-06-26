@@ -26,10 +26,10 @@ fi
 chmod a+rx ./youtube-dl
 
 export PATH=$PATH:/$HOME/$VENDOR_DIR/youtube-dl
-echo $PATH
+echo $PROFILE_PATH
 
 
 
 # PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl"
 # mkdir -p $(dirname $PROFILE_PATH)
-# echo 'export PATH="$PATH:${HOME}/vendor/ffmpeg"' >> $PROFILE_PATH
+echo 'export PATH="$PATH:${HOME}/vendor/youtube-dl"' >> $PROFILE_PATH
