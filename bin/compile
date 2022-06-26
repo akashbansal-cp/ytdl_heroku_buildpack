@@ -2,18 +2,16 @@
 echo "-----> Installing youtube-dl"
 
 #change to the BUILD_DIR
-cd $1
 
-mkdir vendor/youtube-dl
-cd vendor/youtube-dl
-echo inside
-pwd
-dir
+mkdir ytdl
+cd ytdl
 
 # download the youtube-dl
 curl -L https://yt-dl.org/downloads/latest/youtube-dl -o youtube-dl
 
-dir
 chmod a+rx ./youtube-dl
+
+pwd
+
 
 
