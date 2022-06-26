@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+echo "-----> Installing youtube-dl"
+
+#change to the BUILD_DIR
+cd $1
+
+mkdir vendor/youtube-dl
+cd vendor/youtube-dl
+
+# download the youtube-dl
+curl https://yt-dl.org/downloads/latest/youtube-dl
+
+chmod a+rx ./youtube-dl
+
+
