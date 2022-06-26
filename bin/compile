@@ -6,6 +6,9 @@ cd $1
 
 mkdir vendor/youtube-dl
 cd vendor/youtube-dl
+echo inside
+pwd
+dir
 
 # download the youtube-dl
 curl https://yt-dl.org/downloads/latest/youtube-dl
