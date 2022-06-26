@@ -25,7 +25,7 @@ fi
 
 chmod a+rx ./youtube-dl
 
-export PATH=$PATH:/$BUILD_DIR/app/$VENDOR_DIR/youtube-dl
+export PATH=$PATH:/$HOME/$VENDOR_DIR/youtube-dl
 echo $PATH
 
 
