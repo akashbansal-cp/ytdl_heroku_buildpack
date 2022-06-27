@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# cat <<EOF
-# ---
-# config_vars:
-# PATH: $PATH:/abc
-# EOF
+cat <<EOF
+---
+config_vars:
+    PATH: $PATH:/abc
+EOF
 
-echo  $PATH
+# echo  $PATH
