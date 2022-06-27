@@ -29,7 +29,7 @@ chmod a+rx ./youtube-dl
 # # echo $PROFILE_PATH
 
 
-
+echo $PATH
 # PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl"
 # mkdir -p $(dirname $PROFILE_PATH)
 # echo 'export PATH="$PATH:${HOME}/vendor/youtube-dl"' >> $PROFILE_PATH
