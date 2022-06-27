@@ -3,7 +3,7 @@
 cat <<EOF
 ---
 config_vars:
-    PATH: $PATH:/abc
+    PATH: $PATH:/app/vendor/youtube-dl
 EOF
 
 # echo  $PATH
