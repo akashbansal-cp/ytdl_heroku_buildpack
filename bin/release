@@ -3,7 +3,7 @@
 cat <<EOF
 ---
 config_vars:
-    PATH: $PATH:/app/vendor/youtube-dl
+    PATH: $PATH:/app/vendor/yt-dlp
 EOF
 
 # echo  $PATH

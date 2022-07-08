@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-echo "youtube-dl"
+echo "yt-dlp"
 exit 0
